@@ -27,6 +27,8 @@ Use the slower algorithm (rust iterators) in the search.
 Match all occurences of the pattern regardless of if the case matches.
 
 .SH FILES
+.BR ** " This section is not accurate " **
+
 .I /bin/crep
 
 .SH AUTHOR
