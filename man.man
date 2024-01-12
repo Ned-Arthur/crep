@@ -1,0 +1,34 @@
+.TH CREP 1 2024-1-10 "GNU crep 0.1"
+
+.SH NAME
+crep \- Custom search a Regular Expression and Print
+
+.SH SYNOPSIS
+.B crep
+[\fB\-h\fR]
+\fIPATTERN\fR
+\fIFILE_PATH\fR
+[\fBOPTIONS\fR]
+
+.SH DESCRIPTION
+.B crep
+searches for the \fIPATTERN\fR in the \fIFILE\fR.
+All lines with an occurence of the \fIPATTERN\fR are printed to stdout.
+
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help
+Display the help text.
+.TP
+.BR \-s ", " \-\-slow
+Use the slower algorithm (rust iterators) in the search.
+.TP
+.BR \-i ", " \-\-ignore\-case
+Match all occurences of the pattern regardless of if the case matches.
+
+.SH FILES
+.I /bin/crep
+
+.SH AUTHOR
+Ned Murry <https://github.com/Ned-Arthur>
+

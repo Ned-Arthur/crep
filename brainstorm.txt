@@ -1,0 +1,48 @@
+T = ABAAABCD
+P = AABC
+
+===========================================================
+Bad Character Rule
+Table of SKIPS (i.e. correct character = 0 skips)
+
+  P
+ AABC
+A..01
+B01.0
+C012.
+D0123
+
+
+ ABCD
+A.012
+B0.01
+C01.0
+D012.
+
+How tf do I calculate this?
+
+E (Char not in P)
+
+ 3210   < index through backwards P = i
+ ABCD
+A.012
+BE.01
+CEE.0
+DEEE.
+ 0123   < size of E (distance to end of P)
+
+if P.len() = 4, then
+E = P.len() - (i + 1)                         <<<<< THIS
+
+Char is found: distance to skip
+
+   3210   < index through backwards P = i
+   ABCD
+ 0A.012
+ 1BE.01
+ 2CEE.0
+ 3DEEE.
+
+Skip = matchChar.index() - (i+1)
+
+
