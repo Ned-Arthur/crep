@@ -15,7 +15,7 @@ jobs:
     - name: Build
       run: cargo build --release
     - name: Create release
-      uses: softprops/actions-gh-release@v1
+      uses: softprops/action-gh-release@v1
       env:
         GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
